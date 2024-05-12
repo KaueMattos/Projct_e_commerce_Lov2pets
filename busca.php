@@ -41,7 +41,7 @@
         echo "<html><script>location.href='index.php'</script></html>";
     }
 	$pesquisa  = $_GET['txtPesquisar'];
-    $consulta = $cn ->query("select * from vw_camisetas where nm_camiseta like concat ('%','$pesquisa','%') or nm_marca like  
+    $consulta = $cn ->query("select * from vw_Racoes where nm_Racao like concat ('%','$pesquisa','%') or nm_marca like  
     concat ('%','$pesquisa','%');");
     if($consulta->rowCount() == 0){
         echo "<html><script>location.href='erro2.php'</script></html>";
@@ -54,12 +54,12 @@
 <?php while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)) { ?>
 	<div class="row" style="margin-top: 15px;">
 		
-		<div class="col-sm-1 col-sm-offset-1"><img src="imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
-		<div class="col-sm-5"><h4 style="padding-top:20px"><?php echo $exibe['nm_camiseta']?></h4></div>
+		<div class="col-sm-1 col-sm-offset-1"><img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
+		<div class="col-sm-5"><h4 style="padding-top:20px"><?php echo $exibe['nm_Racao']?></h4></div>
 		<div class="col-sm-2"><h4 style="padding-top:20px">Preço: R$<?php echo number_format($exibe['vl_preco'], 2,',','.');?> </h4></div>
 		<div class="col-sm-2 col-xs-offset-right-1" style="padding-top:20px">
 
-        <a href="detalhes.php?cd=<?php echo $exibe['cd_camiseta'];?>">
+        <a href="detalhes.php?cd=<?php echo $exibe['cd_Racao'];?>">
             <button class="btn btn-lg btn-block btn-default">				
                 <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
             </button>
