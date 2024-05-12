@@ -58,7 +58,7 @@
 			 
 			 <h1>Detalhes do Produto</h1>
 			 
-			 <img src="imagens/<?php echo $exibe['ds_img'];?>.jpg" class="img-responsive" style="width:100%;">
+			 <img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/<?php echo $exibe['ds_img'];?>.jpg" class="img-responsive" style="width:100%;">
 		
 				<div class="col-sm-4 col-sm-offset-1" style="margin-top: 10px;"><img src="imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
 				<div class="col-sm-4 col-sm-offset-1" style="margin-top: 10px;"><img src="imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
