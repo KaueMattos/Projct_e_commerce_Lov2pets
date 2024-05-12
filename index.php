@@ -29,7 +29,7 @@ $consulta = $cn->query('select cd_Racao, nm_Racao ,vl_preco,ds_Racao,ds_img,qt_e
     <div class="row">
     <?php while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)) { ?>
         <div class="col-sm-3">
-        <img src="imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive" style="width:100%;" alt="">
+        <img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive" style="width:100%;" alt="">
         <div><h4><b><?php echo mb_strimwidth($exibe['nm_Racao'], 0,25,'...'); ?></b></h4></div>
         <div><h5>R$ <?php echo number_format($exibe['vl_preco'], 2,',','.'); ?></h5></div>
 
