@@ -25,19 +25,19 @@ $marc = $_GET['marc'];
 
 
 
-$consulta = $cn->query("select cd_camiseta,nm_camiseta ,vl_preco,ds_img,qt_estoque from vw_camisetas where nm_marca = '$marc';");
+$consulta = $cn->query("select cd_Racao,nm_Racao ,vl_preco,ds_img,qt_estoque from vw_Racoes where nm_marca = '$marc';");
 ?>
 <div class="container-fluid">
     <div class="row">
     <?php while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)) { ?>
         <div class="col-sm-3">
-        <img src="imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive" style="width:100%;" alt="">
-        <div><h4><b><?php echo mb_strimwidth($exibe['nm_camiseta'], 0,25,'...'); ?></b></h4></div>
+        <img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive" style="width:100%;" alt="">
+        <div><h4><b><?php echo mb_strimwidth($exibe['nm_Racao'], 0,25,'...'); ?></b></h4></div>
         <div><h5>R$ <?php echo number_format($exibe['vl_preco'], 2,',','.'); ?></h5></div>
 
         <div class="text-center" style="margin-top: 5px; margin-bottom:5px;">
 
-        <a href="detalhes.php?cd=<?php echo $exibe['cd_camiseta'];?>">
+        <a href="detalhes.php?cd=<?php echo $exibe['cd_Racao'];?>">
             <button class="btn btn-lg btn-block text-muted">
                 <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
             </button>

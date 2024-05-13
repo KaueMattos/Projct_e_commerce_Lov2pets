@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <style>
         .navbar{
             margin-bottom: 0;
@@ -25,6 +26,8 @@ include 'cabecario.html';
 
 $consulta = $cn->query('select cd_Racao, nm_Racao ,vl_preco,ds_Racao,ds_img,qt_estoque from vw_Racoes;');
 ?>
+
+
 <div class="container-fluid">
     <div class="row">
     <?php while($exibe = $consulta->fetch(PDO::FETCH_ASSOC)) { ?>

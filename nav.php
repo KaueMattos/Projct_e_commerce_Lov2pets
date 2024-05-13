@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">PanBlack</a>
+      <a class="navbar-brand" href="#">Lov2Pets</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -16,13 +16,13 @@
         <li><a href="index.php">Home<span class="sr-only">(current)</span></a></li>
         <li><a href="lanc.php">Lançamentos</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marcas <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="marcas.php?marc=Kace">Kace</a></li>
-            <li><a href="marcas.php?marc=Thunder God Co">Thunder God Co</a></li>
-            <li><a href="marcas.php?marc=Ciena">Ciena</a></li>
-            <li><a href="marcas.php?marc=Nephew">Nephew</a></li>
-            <li><a href="marcas.php?marc=Adidas">Adidas</a></li>
+            <li><a href="marcas.php?marc=Gran Plus">Gran Plus</a></li>
+            <li><a href="marcas.php?marc=Whiskas">Whiskas</a></li>
+            <li><a href="marcas.php?marc=Golden">Golden</a></li>
+            <li><a href="marcas.php?marc=Premier">Premier</a></li>
+            <li><a href="marcas.php?marc=Joy">Joy</a></li>
           </ul>
         </li>
       </ul>
@@ -63,3 +63,4 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
