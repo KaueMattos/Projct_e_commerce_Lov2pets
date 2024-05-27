@@ -9,17 +9,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .navbar{
-            margin-bottom: 0;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/f3e76744a2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/css.css">  
 </head>
 <body>
 <?php 
+session_start();
 include 'conexao.php';
 include 'nav.php';
-include 'cabecario.html';
+include '../html/cabecario.html';
 
 
 
@@ -57,6 +56,6 @@ $consulta = $cn->query('select cd_racao, nm_racao ,vl_preco,ds_img,qt_estoque fr
     <?php } ?>  
     </div>
 </div>
-<?php include 'rodape.html';?>
+<?php include '../html/rodape.html';?>
 </body>
 </html>

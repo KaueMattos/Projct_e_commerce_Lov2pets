@@ -14,15 +14,12 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://kit.fontawesome.com/f3e76744a2.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/css.css">  
 	
-	<style>
-	
-	.navbar{
-		margin-bottom: 0;
-	}
-	
-	
-	</style>
 	
 	
 	
@@ -36,7 +33,7 @@
 	
 	include 'conexao.php';	
 	include 'nav.php';
-	include 'cabecario.html';
+	
 	if(empty($_GET['txtPesquisar'])){
         echo "<html><script>location.href='index.php'</script></html>";
     }
@@ -78,7 +75,7 @@
 	
 	<?php
 	
-	include 'rodape.html';
+	include '../html/rodape.html';
 	
 	?>
 	

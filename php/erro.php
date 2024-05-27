@@ -1,9 +1,8 @@
-
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Panblack - Logon de usuário</title>
+<title>PanBlack - Logon de usuário</title>
 	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -15,17 +14,10 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	
-<style>
+<script src="https://kit.fontawesome.com/f3e76744a2.js" crossorigin="anonymous"></script>
 
-.navbar{
-	margin-bottom: 0;
-}
-	
-	
-</style>
-	
-	
+
+<link rel="stylesheet" href="../css/css.css">   
 </head>
 
 <body>
@@ -34,7 +26,7 @@
 	
 	include 'conexao.php';	
 	include 'nav.php';
-	include 'cabecario.html';
+	include '../html/cabecario.html';
 	
 	?>
 	
@@ -45,17 +37,21 @@
 		
 			<div class="col-sm-4 col-sm-offset-4 text-center">
 				
-				<h2>Usuário Cadastrado com sucesso!!</h2>
+				<h2>Usuário ou senha incorreto!!</h2>
 				
-				<a href="formlogon.php" class="btn btn-block btn-info" role="button">Entrar na loja</a>
-				
-				
-							
+				<a href="formlogon.php" class="btn btn-block btn-default" role="button">Tentar Novamente</a>
+				<a href="formusuario.php">
+				<button type="button" class="btn btn-lg btn-link">
+					
+					Ainda não sou cadastrado
+					
+				</button>
+				</a>		
 			</div>
 		</div>
 	</div>
 	
-	<?php include 'rodape.html' ?>
+	<?php include '../html/rodape.html' ?>
 	
 	
 	

@@ -15,18 +15,10 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	
-	<style>
-	
-	.navbar{
-		margin-bottom: 0;
-	}
-	
-	
-	</style>
-	
-	
-	
+	<script src="https://kit.fontawesome.com/f3e76744a2.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/css.css">  
 </head>
 
 <body>	
@@ -37,7 +29,6 @@
 	
 	include 'conexao.php';	
 	include 'nav.php';
-	include 'cabecario.html';
 	if(!empty($_GET['cd'])){
     $cd_Racao = $_GET['cd'];
 	$consulta = $cn ->query("select * from vw_Racoes where cd_Racao = '$cd_Racao' ");
@@ -60,8 +51,8 @@
 			 
 			 <img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/<?php echo $exibe['ds_img'];?>.jpg" class="img-responsive" style="width:100%;">
 		
-				<div class="col-sm-4 col-sm-offset-1" style="margin-top: 10px;"><img src="imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
-				<div class="col-sm-4 col-sm-offset-1" style="margin-top: 10px;"><img src="imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
+				<div class="col-sm-4 col-sm-offset-1" style="margin-top: 10px;"><img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
+				<div class="col-sm-4 col-sm-offset-1" style="margin-top: 10px;"><img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/<?php echo $exibe['ds_img']; ?>.jpg" class="img-responsive"></div>
 			
 		</div>
 		
@@ -99,7 +90,7 @@
 	
 	<?php
 	
-	include 'rodape.html';
+	include '../html/rodape.html';
 	
 	?>
 	

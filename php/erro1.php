@@ -14,17 +14,9 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-	
-<style>
+<script src="https://kit.fontawesome.com/f3e76744a2.js" crossorigin="anonymous"></script>
 
-.navbar{
-	margin-bottom: 0;
-}
-	
-	
-</style>
-	
-	
+<link rel="stylesheet" href="../css/css.css">   	
 </head>
 
 <body>
@@ -44,9 +36,12 @@
 		
 			<div class="col-sm-4 col-sm-offset-4 text-center">
 				
-				<h3>Nenhum produto foi encontrado! ;( </h3>
+				<h2>Email já em uso na Loja!!!</h2>
 				
-				<a href="index.php" class="btn btn-block btn-default" role="button">Voltar a Página inicial</a>
+				<a href="formusuario.php" class="btn btn-block btn-info" role="button">Tentar Novamente</a>
+				
+				<a href="esquecisenha.php" class="btn btn-block btn-primary" role="button">Esqueci a senha</a>
+				
 							
 			</div>
 		</div>

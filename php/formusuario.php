@@ -14,17 +14,9 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="jquery.mask.js"></script>
-	
-	
-<style>
 
-.navbar{
-	margin-bottom: 0;
-}
-	
-	
-	
-</style>
+<script src="https://kit.fontawesome.com/67c66657c7.js"></script> 
+<link rel="stylesheet" href="../css/css.css"> 
 	
 <script>
 	
@@ -47,7 +39,7 @@ $(document).ready(function(){
 	
 	include 'conexao.php';	
 	include 'nav.php';
-	include 'cabecario.html';
+	include '../html/cabecario.html';
 	
 	?>
 	
@@ -114,7 +106,7 @@ $(document).ready(function(){
 		</div>
 	</div>
 	
-	<?php include 'rodape.html' ?>
+	<?php include '../html/rodape.html' ?>
 	
 	
 	

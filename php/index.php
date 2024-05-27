@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PanBlack</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <title>PanBlack</title>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <style>
-        .navbar{
-            margin-bottom: 0;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/f3e76744a2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+
+    <link rel="stylesheet" href="../css/css.css">   
 </head>
 <body>
 <?php 
@@ -22,11 +18,15 @@
 session_start();
 include 'conexao.php';
 include 'nav.php';
-include 'cabecario.html';
+include '../html/cabecario.html';
 
 $consulta = $cn->query('select cd_Racao, nm_Racao ,vl_preco,ds_Racao,ds_img,qt_estoque from vw_Racoes;');
+
 ?>
 
+<div id="carrossel">
+		<img src="imagens/banner1.png" name="slide" id="slide"/>
+</div>
 
 <div class="container-fluid">
     <div class="row">
@@ -60,6 +60,6 @@ $consulta = $cn->query('select cd_Racao, nm_Racao ,vl_preco,ds_Racao,ds_img,qt_e
     <?php } ?>  
     </div>
 </div>
-<?php include 'rodape.html';?>
+<?php include '../html/rodape.html';?>
 </body>
 </html>

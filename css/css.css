@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(rgb(206, 32, 32) , rgba(236, 29, 29, 0.878) );
+    box-shadow: 0px 2px 10px #4646465b;
+    position: relative;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 15px 30px;
+    top:0; 
+    margin-bottom: 20px;
+}
+
+.logo{
+    display: flex;
+    width: 124px ;
+}
+
+.logo img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.logo:hover img{
+    transform: scale(1.10);
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+    align-items: center;
+}
+
+nav ol li{
+    margin: 0 2px;  
+}
+
+nav ol li a{
+    color:#fff;
+    font-size: 1.15rem;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.6s ease-in-out;
+
+}
+
+nav ol li a:hover{
+    background: #fff;
+    color: #f00;
+}
+
+nav .search_box{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+nav .search_box input{
+    border:none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 1.15rem;
+    width: 350px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+nav .search_box span{
+    color: #0a5071;
+    font-size: 1.15rem;
+    background:#fff;
+    height: 100%;
+    padding: 14px;
+    position: relative;
+    cursor: pointer;
+    border-top-right-radius: 20px; /* Raio para o canto superior direito */
+    border-bottom-right-radius: 20px; /* Raio para o canto inferior direito */
+    z-index: 1;
+}
+
+nav .search_box span:hover{
+    color: #fff;
+    border-top-right-radius: 20px; /* Raio para o canto superior direito */
+    border-bottom-right-radius: 20px; 
+    
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #f00;;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 20px; /* Raio para o canto superior direito */
+    border-bottom-right-radius: 20px; 
+    z-index: -1;
+    transition: 0.1s;
+}
+
+nav .search_box button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+nav form{
+    display: inherit;
+}
+nav .search_box span:hover::after{
+    width: 100%;
+}
+
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+nav .bar span{
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance:none;
+    display: none;
+}
+nav .box{
+    display: flex;
+    background: #ffffff;
+    padding: 3px;
+    border-radius: 15px;
+    align-items: center;
+}
+nav .textcolor{
+    transition:none;
+}
+nav .box .textcolor{
+    color: #ce2020;
+}
+nav ol li .textcolor:hover{
+    background: fixed;
+    color: #ce2020;
+}
+
+#carrossel img{
+	width:100%;
+    height:35vw;
+	border-radius:8px;	  
+}	  
+ #carrossel{  
+    margin: auto;
+    margin-top: 200px;
+    width:90%;
+    height:auto;  
+}	
+
+@media screen and (max-width: 1200px){
+    nav{
+        display: block;
+        padding: 0;
+    }
+
+    .logo{
+        margin: auto;
+        padding:20px;
+    }
+    nav .search_box{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav .search_box input{
+        width: 90%;
+    }
+    nav ol{
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ol li{
+        text-align: center;   
+    }
+    nav ol li a{
+        color: #ffffff; 
+        font-size: 1.40rem;
+        padding: 25px;
+        display: block;
+    }
+    nav .bar{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;       
+    }
+    nav .box{
+       height: 45px;
+    }
+    nav .bar #times{
+        display: none;
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    }
+    #check:checked ~ nav ol{
+        visibility: visible;
+        height: 410px;
+    }
+}

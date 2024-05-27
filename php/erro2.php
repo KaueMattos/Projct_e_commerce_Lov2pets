@@ -1,4 +1,4 @@
-<!doctype html>
+<doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -13,27 +13,22 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	
-<style>
 
-.navbar{
-	margin-bottom: 0;
-}
-	
-	
-</style>
-	
+<script src="https://kit.fontawesome.com/f3e76744a2.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="../css/css.css"> 
 	
 </head>
 
 <body>
 	
 <?php
-	
+
+	session_start();
 	include 'conexao.php';	
 	include 'nav.php';
-	include 'cabecario.html';
+	include '../html/cabecario.html';
 	
 	?>
 	
@@ -44,21 +39,15 @@
 		
 			<div class="col-sm-4 col-sm-offset-4 text-center">
 				
-				<h2>Usuário ou senha incorreto!!</h2>
+				<h3>Nenhum produto foi encontrado! ;( </h3>
 				
-				<a href="formlogon.php" class="btn btn-block btn-default" role="button">Tentar Novamente</a>
-				<a href="formusuario.php">
-				<button type="button" class="btn btn-lg btn-link">
-					
-					Ainda não sou cadastrado
-					
-				</button>
-				</a>		
+				<a href="index.php" class="btn btn-block btn-default" role="button">Voltar a Página inicial</a>
+							
 			</div>
 		</div>
 	</div>
 	
-	<?php include 'rodape.html' ?>
+	<?php include '../html/rodape.html' ?>
 	
 	
 	
