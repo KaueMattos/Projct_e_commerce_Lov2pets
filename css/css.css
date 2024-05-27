@@ -147,6 +147,7 @@ nav .box{
     padding: 3px;
     border-radius: 15px;
     align-items: center;
+    justify-content: center;
 }
 nav .textcolor{
     transition:none;
@@ -166,10 +167,15 @@ nav ol li .textcolor:hover{
 }	  
  #carrossel{  
     margin: auto;
-    margin-top: 200px;
+    margin-top: 80px;
+    margin-bottom:80px;
     width:90%;
     height:auto;  
 }	
+
+.modific{
+    text-decoration: none !important;
+}
 
 @media screen and (max-width: 1200px){
     nav{
@@ -196,6 +202,7 @@ nav ol li .textcolor:hover{
         height: 0;
         visibility: hidden;
         transition: 0.3s;
+        align-items: stretch;
     }
     nav ol li{
         text-align: center;   
@@ -227,6 +234,6 @@ nav ol li .textcolor:hover{
     }
     #check:checked ~ nav ol{
         visibility: visible;
-        height: 410px;
+        height: 300px;
     }
 }

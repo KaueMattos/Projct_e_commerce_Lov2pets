@@ -76,8 +76,9 @@
         </button>
         <?php } 
          else{ ?>
-        <button class="btn btn-lg " style="background-color:#000000;color:#fff">
-            <span class="glyphicon glyphicon-remove-circle"> Comprar</span>
+        <button class="btn btn-lg " style="background-color:#ce2020;color:#fff">
+			<i class="fa-solid fa-cart-shopping"></i>
+            <span>Comprar</span>
         </button>
         <?php }?>
 		

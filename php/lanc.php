@@ -34,9 +34,10 @@ $consulta = $cn->query('select cd_racao, nm_racao ,vl_preco,ds_img,qt_estoque fr
 
         <div class="text-center" style="margin-top: 5px; margin-bottom:5px;">
 
-        <a href="detalhes.php?cd=<?php echo $exibe['cd_Racao'];?>">
+        <a class="modific" href="detalhes.php?cd=<?php echo $exibe['cd_Racao'];?>">
             <button class="btn btn-lg btn-block text-muted">
-                <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
+                <i class="fa-solid fa-circle-info"></i>
+                <span> Detalhes</span>
             </button>
         </a>
         <?php 
@@ -46,8 +47,9 @@ $consulta = $cn->query('select cd_racao, nm_racao ,vl_preco,ds_img,qt_estoque fr
         </button>
         <?php } 
          else{ ?>
-        <button class="btn btn-lg btn-block" style="background-color:#000000;color:#fff">
-            <span class="glyphicon glyphicon-remove-circle"> Comprar</span>
+        <button class="btn btn-lg btn-block" style="background-color:#ce2020;color:#fff">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span> Comprar</span>
         </button>
         <?php }?>
         </div>

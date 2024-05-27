@@ -56,9 +56,10 @@
 		<div class="col-sm-2"><h4 style="padding-top:20px">Preço: R$<?php echo number_format($exibe['vl_preco'], 2,',','.');?> </h4></div>
 		<div class="col-sm-2 col-xs-offset-right-1" style="padding-top:20px">
 
-        <a href="detalhes.php?cd=<?php echo $exibe['cd_Racao'];?>">
-            <button class="btn btn-lg btn-block btn-default">				
-                <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
+        <a class="modific" href="detalhes.php?cd=<?php echo $exibe['cd_Racao'];?>">
+            <button class="btn btn-lg btn-block btn-default">	
+				<i class="fa-solid fa-circle-info"></i>			
+                <span>Detalhes</span>
             </button>
         </a>
 		

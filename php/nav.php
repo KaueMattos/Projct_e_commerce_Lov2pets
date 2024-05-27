@@ -2,7 +2,7 @@
 <nav>
    
         <div class="logo">
-            <a href="index.php"><img src="../imagens/LogoLov.png" alt=""></a>
+            <a href="index.php"><img src="https://raw.githubusercontent.com/KaueMattos/Projct_e_commerce_Lov2pets/main/imagens/LogoLov.png" alt=""></a>
         </div>
     
 
@@ -32,6 +32,14 @@
             
         ?>
 
+        <style>
+            @media screen and (max-width: 1200px){
+                #check:checked ~ nav ol{
+                visibility: visible;
+                height: 320px;
+            }}
+        </style>
+
         <div class="box">
             <i class="fa-solid fa-circle-user fa-2x" style="color: #ce2020;"></i>
             <li><a class="textcolor" href="#"><?php echo $exibe_usuario['nomeUsu']; ?></a></li>
@@ -43,6 +51,14 @@
            $consulta_usuario = $cn->query("select nomeUsu from tb_Usuario
            where idUsua = '$_SESSION[ID]'");
            $exibe_usuario = $consulta_usuario->fetch(PDO::FETCH_ASSOC);?>
+
+        <style>
+            @media screen and (max-width: 1200px){
+                #check:checked ~ nav ol{
+                visibility: visible;
+                height: 320px;
+            }}
+        </style>
 
             <div class="box">
                 <i class="fa-solid fa-shield-dog fa-2x" style="color: #ce2020;"></i>
